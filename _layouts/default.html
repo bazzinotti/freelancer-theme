@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     {% include head.html %}
-    <body id="page-top" class="index">
+    <body id="page-top" class="index" onLoad="JSFX_StartEffects(); bootupLogoAni();">
+    <div id="DERP"><a class="button" href="#" ><img class="centered fadein" src="img/logo.gif"></a></div>
+    <div class="contain-all">
     {% include nav.html %}
     {% include header.html %}
     {% include portfolio_grid.html %}
@@ -18,5 +20,6 @@
     {% include footer.html %}
     {% include modals.html %}
     {% include js.html %}
+    </div>
     </body>
 </html>

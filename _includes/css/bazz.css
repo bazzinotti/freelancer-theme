@@ -1,0 +1,29 @@
+/* added by bazz */
+#profilepic { src="img/profile.jpeg" alt="" style="background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width:256px; }
+
+/* For the logo fade-in intro */
+/* ------------------------------*/
+#DERP { z-index:9999; position:fixed; left:0px; top:0px; width: 100%; height:100%; background-color: #000; }
+.centered {
+  position: absolute; /* or absolute */
+  top: 50%;
+  left: 50%;
+  margin-top:-62.5px;
+  margin-left:-62.5px;
+}
+
+.contain-all { opacity: 0.0; transition: opacity 5s linear 150ms; -webkit-transition: opacity 5s linear 150ms; }
+/* transition CSS3 -- this hooks in with JS in js.html */
+.fadein { opacity: 0.0; transition: opacity 5s linear 150ms; -webkit-transition: opacity 5s linear 150ms; }
+.animate { opacity: 1.0;}
+/* Had to specifically set white background since transitionend callback wasn't working correctly. The event
+was sometimes being called early.. I compensated by leaving the black background displayed, just u can't see it
+anymore because I specify a background of white on top (z-index is involved)*/
+#contact { background-color: #fff; }
+#portfolio { background-color: #fff; }
+/*---------------------------------- */

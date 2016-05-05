@@ -24,3 +24,24 @@
     <!-- Disqus Stuff -->
     {% include js_disqus.html %}
     {% endif %}
+
+    <!-- added by bazz -->
+    <!-- Beautiful Mouse Pixels // A mod by Bazz :) -->
+    <SCRIPT LANGUAGE="JavaScript" SRC="js/JSFX_Layer.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="js/JSFX_Mouse.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="js/JSFX_Fire.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript">
+    function JSFX_StartEffects()
+    {
+      JSFX.Fire(28, 0);
+    }
+    <!-- -->
+    function bootupLogoAni() {
+        $(".fadein").addClass("animate");
+    }
+
+    $(".button").click(function()
+    {
+      $(this).parent().css("z-index", "-1000");
+      $(".contain-all").addClass("animate");
+    });</script>
